@@ -24,7 +24,6 @@ jar {
     manifest {
         attributes 'Main-Class': 'domoya.jar.MainKt'
     }
-
     from { 
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } 
     }
